@@ -1,0 +1,193 @@
+\documentclass[12pt,t,beamer]{beamer}
+\useoutertheme[links=true,sections=false]{progressbarjma}
+
+\usecolortheme{beaver}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\setbeamertemplate{theorems}[numbered]
+\setbeamertemplate{items}[ball] 
+\setbeamertemplate{sections/subsections in toc}[ball]
+\setbeamercolor{item projected}{bg=red!70!black} 
+
+\usepackage[round]{natbib}
+
+\def\suppressnavigationsymbols{%
+  \setbeamertemplate{navigation symbols}{}}
+
+\def\restorenavigationsymbols{%
+  \setbeamertemplate{navigation symbols}{%
+    \insertslidenavigationsymbol
+    \insertframenavigationsymbol
+    \hskip1.5pt
+    \insertindexnavigationsymbol
+    \insertdocnavigationsymbol
+    \insertbackfindforwardnavigationsymbol
+  }%
+}
+
+% The following is needed, otherwise LaTeX will complain 
+% when typesetting the bibliography...
+\def\newblock{\hskip .11em plus .33em minus .07em}
+
+
+\title[]{The progressbar theme}
+\author{Dr J McKenzie Alexander}
+
+\institute[LSE] 
+{
+  Department of Philosophy, Logic and Scientific Method\\
+  London School of Economics and Political Science
+}
+
+\date{\today}
+
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each subsection:
+\AtBeginSubsection[]
+{
+  \begin{frame}
+    \frametitle{Outline}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Outline} 
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\begin{document}
+
+
+\suppressnavigationsymbols
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\restorenavigationsymbols
+
+
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+\section{Introduction}
+
+\begin{frame}
+  \frametitle{Slide 1}
+
+  This is some text.
+  
+  \begin{itemize}
+  \item<2-> An important point.
+  \item<3-> Another important point.
+  \item<4-> And another important point.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Slide 2}
+
+  This is some text.
+  
+  \begin{itemize}
+  \item<2-> An important point.
+  \item<3-> Another important point.
+  \item<4-> And another important point.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Slide 3}
+
+  This is some text.
+  
+  \begin{itemize}
+  \item<2-> An important point.
+  \item<3-> Another important point.
+  \item<4-> And another important point.
+  \end{itemize}
+
+\end{frame}
+
+
+\section{Middle section of the talk}
+
+\begin{frame}
+  \frametitle{Slide 1}
+
+  This is some text.
+  
+  \begin{itemize}
+  \item<2-> An important point.
+  \item<3-> Another important point.
+  \item<4-> And another important point.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Slide 2}
+
+  This is some text.
+  
+  \begin{itemize}
+  \item<2-> An important point.
+  \item<3-> Another important point.
+  \item<4-> And another important point.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Slide 3}
+
+  This is some text.
+  
+  \begin{itemize}
+  \item<2-> An important point.
+  \item<3-> Another important point.
+  \item<4-> And another important point.
+  \end{itemize}
+
+\end{frame} 
+
+
+\section{Conclusion}
+
+\begin{frame}
+  \frametitle{Conclusion}
+
+  This is some text.
+  
+  \begin{itemize}
+  \item<2-> An important point.
+  \item<3-> Another important point.
+  \item<4-> And another important point.
+  \end{itemize}
+
+\end{frame}
+
+
+
+\nocite{Hampton:1986,Kavka:1986,Hobbes:1651}
+\nocite{Mill:1846,Smith:1997,Addis:1968,MacIver:1968}
+\nocite{ScottGordon:1993}
+
+\progressbarstartreferences
+\begin{frame}[allowframebreaks]
+  \frametitle{References and miscellaneous readings}
+  \bibliographystyle{plainnat}  \bibliography{/Users/jalex/Dropbox/Miscellaneous/Bibliography.bib}
+\end{frame}
+
+\appendix
+\thumbnails{progress-bar-example-frames}{14}
+
+\end{document}
+
+
